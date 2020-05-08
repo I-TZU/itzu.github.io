@@ -73,10 +73,10 @@ let wallY_down = height;
 let color = '';
 
 let squareX = [];
-for(var i=3; i<width-3; i+=25) squareX.push(i);
+for(var i=3; i<=width-3; i+=22) squareX.push(i);
 
 function open_big(X, Y) {
-  ctx.fillStyle = 'Gold';
+  ctx.fillStyle = 'yellow';
   ctx.beginPath();
   ctx.arc(posX, posY, radius, degToRad(-45), degToRad(45), true);
   ctx.lineTo(posX, posY);
@@ -84,7 +84,7 @@ function open_big(X, Y) {
 };
 
 function open_middle(X, Y) {
-  ctx.fillStyle = 'Gold';
+  ctx.fillStyle = 'yellow';
   ctx.beginPath();
   ctx.arc(posX, posY, radius, degToRad(-30), degToRad(30), true);
   ctx.lineTo(posX, posY);
@@ -92,7 +92,7 @@ function open_middle(X, Y) {
 };
 
 function open_small(X, Y) {
-  ctx.fillStyle = 'Gold';
+  ctx.fillStyle = 'yellow';
   ctx.beginPath();
   ctx.arc(posX, posY, radius, degToRad(-15), degToRad(15), true);
   ctx.lineTo(posX, posY);
@@ -109,7 +109,7 @@ function draw() {
   ctx.fillRect(0, 0, width, height);
   
   for(let i of squareX) {
-    if(i > posX) square(i, posY, 8, 8, 'Tomato');
+    if(i > posX) square(i, posY, 6, 6, 'red');
   };
   
   for(var i=0; i<width; i+=14) {
