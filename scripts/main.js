@@ -53,3 +53,94 @@ myButton.onclick = function() {
   setUserName();
 }
 
+const canvas = document.querySelector('.myCanvas');
+const width = canvas.width = 600;
+const height = canvas.height = 200;
+const ctx = canvas.getContext('2d');
+
+ctx.fillStyle = 'rgb(0, 0, 0)';
+ctx.fillRect(0, 0, width, height);
+
+function degToRad(degrees) {
+  return degrees * Math.PI / 180;
+};
+
+let posX = 0;
+let posY = height/2;
+let radius = 30;
+let order = 0;
+let range = 20;
+let wallX = 0;
+let wallY_up = 0;
+let wallY_down = height;
+let color = '';
+
+let squareX = [];
+for(var i=3; i<width-3; i+=25) squareX.push(i);
+
+function open_big(X, Y) {
+  ctx.fillStyle = 'yellow';
+  ctx.beginPath();
+  ctx.arc(posX, posY, radius, degToRad(-45), degToRad(45), true);
+  ctx.lineTo(posX, posY);
+  ctx.fill();
+};
+
+function open_middle(X, Y) {
+  ctx.fillStyle = 'yellow';
+  ctx.beginPath();
+  ctx.arc(posX, posY, radius, degToRad(-30), degToRad(30), true);
+  ctx.lineTo(posX, posY);
+  ctx.fill();
+};
+
+function open_small(X, Y) {
+  ctx.fillStyle = 'yellow';
+  ctx.beginPath();
+  ctx.arc(posX, posY, radius, degToRad(-15), degToRad(15), true);
+  ctx.lineTo(posX, posY);
+  ctx.fill();
+}
+
+function square(X, Y, W, H, color) {
+  ctx.fillStyle = color;
+  ctx.fillRect(X-W/2, Y-H/2, W, H);
+};
+
+function draw() {
+  ctx.fillStyle = 'rgb(0, 0, 0)';
+  ctx.fillRect(0, 0, width, height);
+  
+  for(let i of squareX) {
+    if(i > posX) square(i, posY, 6, 6, 'red');
+  };
+  
+  for(var i=0; i<width; i+=15) {
+	square(i+6, wallY_up+6, 12, 12, 'darkblue');
+	square(i+6, wallY_down-6, 12, 12, 'darkblue');
+  };
+  
+  switch (order) {
+    case 0:
+	  open_big(posX, posY);
+	  break;
+	case 1:
+	  open_middle(posX, posY);
+	  break;
+	case 2:
+	  open_small(posX, posY);
+	  break;
+  };
+  
+  if(posX > (width + radius/2)) posX = 0 - radius;
+  else posX += 2;
+  
+  if(posX%range === 0) {
+	if(order === 2) order = 0;
+    else order += 1;
+  };
+  
+  requestAnimationFrame(draw);
+};
+
+draw();
