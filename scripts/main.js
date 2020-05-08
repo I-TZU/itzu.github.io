@@ -70,32 +70,48 @@ let range = 20;
 let wallX = 0;
 let wallY_up = 0;
 let wallY_down = height;
+let PacmanColor = 'yellow';
 let color = '';
 
 let squareX = [];
 for(var i=3; i<=width-3; i+=22) squareX.push(i);
 
 function open_big(X, Y) {
-  ctx.fillStyle = 'yellow';
+  ctx.fillStyle = PacmanColor;
   ctx.beginPath();
   ctx.arc(posX, posY, radius, degToRad(-45), degToRad(45), true);
   ctx.lineTo(posX, posY);
   ctx.fill();
+  
+  ctx.fillStyle = 'black';
+  ctx.beginPath();
+  ctx.arc(posX, posY-radius/3*2, 3, degToRad(0), degToRad(360), true);
+  ctx.fill();
 };
 
 function open_middle(X, Y) {
-  ctx.fillStyle = 'yellow';
+  ctx.fillStyle = PacmanColor;
   ctx.beginPath();
   ctx.arc(posX, posY, radius, degToRad(-30), degToRad(30), true);
   ctx.lineTo(posX, posY);
   ctx.fill();
+  
+  ctx.fillStyle = 'black';
+  ctx.beginPath();
+  ctx.arc(posX, posY-radius/3*2, 3, degToRad(0), degToRad(360), true);
+  ctx.fill();
 };
 
 function open_small(X, Y) {
-  ctx.fillStyle = 'yellow';
+  ctx.fillStyle = PacmanColor;
   ctx.beginPath();
   ctx.arc(posX, posY, radius, degToRad(-15), degToRad(15), true);
   ctx.lineTo(posX, posY);
+  ctx.fill();
+  
+  ctx.fillStyle = 'black';
+  ctx.beginPath();
+  ctx.arc(posX, posY-radius/3*2, 3, degToRad(0), degToRad(360), true);
   ctx.fill();
 }
 
