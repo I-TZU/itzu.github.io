@@ -58,9 +58,6 @@ const width = canvas.width = 600;
 const height = canvas.height = 200;
 const ctx = canvas.getContext('2d');
 
-ctx.fillStyle = 'rgb(0, 0, 0)';
-ctx.fillRect(0, 0, width, height);
-
 function degToRad(degrees) {
   return degrees * Math.PI / 180;
 };
@@ -108,7 +105,7 @@ function square(X, Y, W, H, color) {
 };
 
 function draw() {
-  ctx.fillStyle = 'rgb(0, 0, 0)';
+  ctx.fillStyle = 'DarkGrey';
   ctx.fillRect(0, 0, width, height);
   
   for(let i of squareX) {
@@ -116,8 +113,8 @@ function draw() {
   };
   
   for(var i=0; i<width; i+=15) {
-	square(i+6, wallY_up+6, 12, 12, 'darkblue');
-	square(i+6, wallY_down-6, 12, 12, 'darkblue');
+	square(i+6, wallY_up+6, 12, 12, 'DarkSlateGrey');
+	square(i+6, wallY_down-6, 12, 12, 'DarkSlateGrey');
   };
   
   switch (order) {
