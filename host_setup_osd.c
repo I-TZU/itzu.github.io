@@ -60,32 +60,32 @@ void host_setup_menu_osd_get_info(HOST_STREAM_ID eStreamId)
 		
 		if(uiStreamW==7680 && uiStreamH==4320){
 			s_setup_osd.ui_enc_resolution = HOST_OSD_MENU_RESOLUTION_8K;			
-			s_setup_osd.ui_enc_w = 3456;
-			s_setup_osd.ui_enc_h = 1680*1.2;
+			s_setup_osd.ui_enc_w = 2800;
+			s_setup_osd.ui_enc_h = 1440*1.2;
 			s_setup_osd.ui_enc_x = ((uiStreamW-s_setup_osd.ui_enc_w)/2);
 			s_setup_osd.ui_enc_y = ((uiStreamH-s_setup_osd.ui_enc_h)/2);
-			s_setup_osd.ui_enc_font_size = 72;
+			s_setup_osd.ui_enc_font_size = 60;
 		}else if(uiStreamW==3840 && uiStreamH==2160){
 			s_setup_osd.ui_enc_resolution = HOST_OSD_MENU_RESOLUTION_4K;
-			s_setup_osd.ui_enc_w = 1728;
-			s_setup_osd.ui_enc_h = 840*1.2;
+			s_setup_osd.ui_enc_w = 1400;
+			s_setup_osd.ui_enc_h = 720*1.2;
 			s_setup_osd.ui_enc_x = ((uiStreamW-s_setup_osd.ui_enc_w)/2);
 			s_setup_osd.ui_enc_y = ((uiStreamH-s_setup_osd.ui_enc_h)/2);
-			s_setup_osd.ui_enc_font_size = 36;
+			s_setup_osd.ui_enc_font_size = 30;
 		}else if(uiStreamW==1920 && uiStreamH==1080){
 			s_setup_osd.ui_enc_resolution = HOST_OSD_MENU_RESOLUTION_FULLHD;
-			s_setup_osd.ui_enc_w = 864;
-			s_setup_osd.ui_enc_h = 420*1.2;
+			s_setup_osd.ui_enc_w = 700;
+			s_setup_osd.ui_enc_h = 360*1.2;
 			s_setup_osd.ui_enc_x = ((uiStreamW-s_setup_osd.ui_enc_w)/2);
 			s_setup_osd.ui_enc_y = ((uiStreamH-s_setup_osd.ui_enc_h)/2);
-			s_setup_osd.ui_enc_font_size = 18;
+			s_setup_osd.ui_enc_font_size = 14;
 		}else if(uiStreamW==1280 && uiStreamH==720){
 			s_setup_osd.ui_enc_resolution = HOST_OSD_MENU_RESOLUTION_HD;
-			s_setup_osd.ui_enc_w = 576;
-			s_setup_osd.ui_enc_h = 280*1.2;
+			s_setup_osd.ui_enc_w = 468;
+			s_setup_osd.ui_enc_h = 240*1.2;
 			s_setup_osd.ui_enc_x = ((uiStreamW-s_setup_osd.ui_enc_w)/2);
 			s_setup_osd.ui_enc_y = ((uiStreamH-s_setup_osd.ui_enc_h)/2);
-			s_setup_osd.ui_enc_font_size = 12;
+			s_setup_osd.ui_enc_font_size = 10;
 		}else if(uiStreamW==720 && uiStreamH==480){
 			s_setup_osd.ui_enc_resolution = HOST_OSD_MENU_RESOLUTION_HD;
 			s_setup_osd.ui_enc_w = 468;
@@ -95,15 +95,15 @@ void host_setup_menu_osd_get_info(HOST_STREAM_ID eStreamId)
 			s_setup_osd.ui_enc_font_size = 10;
 		}else{
 			s_setup_osd.ui_enc_resolution = HOST_OSD_MENU_RESOLUTION_FULLHD;
-			s_setup_osd.ui_enc_w = 864;
-			s_setup_osd.ui_enc_h = 420*1.2;
+			s_setup_osd.ui_enc_w = 700;
+			s_setup_osd.ui_enc_h = 360*1.2;
 			s_setup_osd.ui_enc_x = ((uiStreamW-s_setup_osd.ui_enc_w)/2);
 			s_setup_osd.ui_enc_y = ((uiStreamH-s_setup_osd.ui_enc_h)/2);
-			s_setup_osd.ui_enc_font_size = 18;
+			s_setup_osd.ui_enc_font_size = 14;
 		}
 		
-		s_setup_osd.ui_enc_base_w = 576;
-		s_setup_osd.ui_enc_base_h = 280*1.2;
+		s_setup_osd.ui_enc_base_w = 468;
+		s_setup_osd.ui_enc_base_h = 240*1.2;
 		
 		if(s_setup_osd.ui_enc_x%2==1)s_setup_osd.ui_enc_x = s_setup_osd.ui_enc_x-1;
 		if(s_setup_osd.ui_enc_y%2==1)s_setup_osd.ui_enc_y = s_setup_osd.ui_enc_y-1;
@@ -120,32 +120,32 @@ void host_setup_menu_osd_get_info(HOST_STREAM_ID eStreamId)
 
 		if(uiStreamW==7680 && uiStreamH==4320){
 			s_setup_osd.ui_display_resolution = HOST_OSD_MENU_RESOLUTION_8K;
-			s_setup_osd.ui_display_w = 3456;
-			s_setup_osd.ui_display_h = 1680*1.2;
+			s_setup_osd.ui_display_w = 2800;
+			s_setup_osd.ui_display_h = 1440*1.2;
 			s_setup_osd.ui_display_x = ((uiStreamW-s_setup_osd.ui_display_w)/2);
 			s_setup_osd.ui_display_y = ((uiStreamH-s_setup_osd.ui_display_h)/2);
-			s_setup_osd.ui_display_font_size = 72;
+			s_setup_osd.ui_display_font_size = 60;
 		}else if(uiStreamW==3840 && uiStreamH==2160){
 			s_setup_osd.ui_display_resolution = HOST_OSD_MENU_RESOLUTION_4K;
-			s_setup_osd.ui_display_w = 1728;
-			s_setup_osd.ui_display_h = 840*1.2;
+			s_setup_osd.ui_display_w = 1400;
+			s_setup_osd.ui_display_h = 720*1.2;
 			s_setup_osd.ui_display_x = ((uiStreamW-s_setup_osd.ui_display_w)/2);
 			s_setup_osd.ui_display_y = ((uiStreamH-s_setup_osd.ui_display_h)/2);
-			s_setup_osd.ui_display_font_size = 36;
+			s_setup_osd.ui_display_font_size = 30;
 		}else if(uiStreamW==1920 && uiStreamH==1080){
 			s_setup_osd.ui_display_resolution = HOST_OSD_MENU_RESOLUTION_FULLHD;
-			s_setup_osd.ui_display_w = 864;
-			s_setup_osd.ui_display_h = 420*1.2;
+			s_setup_osd.ui_display_w = 700;
+			s_setup_osd.ui_display_h = 360*1.2;
 			s_setup_osd.ui_display_x = ((uiStreamW-s_setup_osd.ui_display_w)/2);
 			s_setup_osd.ui_display_y = ((uiStreamH-s_setup_osd.ui_display_h)/2);
-			s_setup_osd.ui_display_font_size = 18;
+			s_setup_osd.ui_display_font_size = 14;
 		}else if(uiStreamW==1280 && uiStreamH==720){
 			s_setup_osd.ui_display_resolution = HOST_OSD_MENU_RESOLUTION_HD;
-			s_setup_osd.ui_display_w = 576;
-			s_setup_osd.ui_display_h = 280*1.2;
+			s_setup_osd.ui_display_w = 468;
+			s_setup_osd.ui_display_h = 240*1.2;
 			s_setup_osd.ui_display_x = ((uiStreamW-s_setup_osd.ui_display_w)/2);
 			s_setup_osd.ui_display_y = ((uiStreamH-s_setup_osd.ui_display_h)/2);
-			s_setup_osd.ui_display_font_size = 12;
+			s_setup_osd.ui_display_font_size = 10;
 		}else if(uiStreamW==720 && uiStreamH==480){
 			s_setup_osd.ui_display_resolution = HOST_OSD_MENU_RESOLUTION_HD;
 			s_setup_osd.ui_display_w = 468;
@@ -155,15 +155,15 @@ void host_setup_menu_osd_get_info(HOST_STREAM_ID eStreamId)
 			s_setup_osd.ui_display_font_size = 10;
 		}else{
 			s_setup_osd.ui_display_resolution = HOST_OSD_MENU_RESOLUTION_FULLHD;
-			s_setup_osd.ui_display_w = 864;
-			s_setup_osd.ui_display_h = 420*1.2;
+			s_setup_osd.ui_display_w = 700;
+			s_setup_osd.ui_display_h = 360*1.2;
 			s_setup_osd.ui_display_x = ((uiStreamW-s_setup_osd.ui_display_w)/2);
 			s_setup_osd.ui_display_y = ((uiStreamH-s_setup_osd.ui_display_h)/2);
-			s_setup_osd.ui_display_font_size = 18;
+			s_setup_osd.ui_display_font_size = 14;
 		}
 
-		s_setup_osd.ui_display_base_w = 576;
-		s_setup_osd.ui_display_base_h = 280*1.2;
+		s_setup_osd.ui_display_base_w = 468;
+		s_setup_osd.ui_display_base_h = 240*1.2;
 
 		if(s_setup_osd.ui_display_x%2==1)s_setup_osd.ui_display_x = s_setup_osd.ui_display_x-1;
 		if(s_setup_osd.ui_display_y%2==1)s_setup_osd.ui_display_y = s_setup_osd.ui_display_y-1;
@@ -221,9 +221,12 @@ void OSDLib_DrawMenuBG(AB_OSD_BUF_ST s_dst_buf, HOST_OSD_MENU_RESOLUTION nResolu
 	}
 
 	// Draw Menu
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_DARKGRAY, 0, 0, ui_w, ui_gap*ui_times/divisor);
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_MEDIUMGRAY, 0, ui_gap*ui_times/divisor, ui_w, ui_h-ui_gap*ui_times/divisor);
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x-1)*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_GRAY, 0, 0, ui_w, ui_gap*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_MENU_BG, 0, ui_gap*ui_times/divisor, ui_w, ui_h-ui_gap*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, 0, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_base_x*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_w-2*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, 0, ui_h-2*ui_times/divisor, ui_w, 2*ui_times/divisor);
 }
 
 void OSDLib_DrawMainMenu(AB_OSD_BUF_ST s_dst_buf, uint16_t wIndex, HOST_OSD_MENU_RESOLUTION nResolution)
@@ -273,42 +276,24 @@ void OSDLib_DrawMainMenu(AB_OSD_BUF_ST s_dst_buf, uint16_t wIndex, HOST_OSD_MENU
 		ui_gap = ui_base_h/12;
 	}
 
+
 	//title
-	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_DARKGRAY, ui_font_size, _STR_MENU_, (ui_base_title_w/2)*ui_times/divisor, (ui_gap/2+2)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
+	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_GRAY, ui_font_size, _STR_MENU_, (ui_base_title_w/2)*ui_times/divisor, (ui_gap/2+2)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
 	
 	// item
-	if(ui_menu_item==HOST_OSD_MENU_MAIN){
-		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, 0, ui_gap*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
-		for(j=0; j<SETUPMENU_TOTAL; j++){
-			if(s_setup_osd.ui_main_turnoff[j] == 0){
-				if(s_setup_osd.ui_main_disabled[j] == 1){
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[j], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+	for(j=0; j<SETUPMENU_TOTAL; j++){
+		if(s_setup_osd.ui_main_turnoff[j] == 0){
+			if(s_setup_osd.ui_main_disabled[j] == 1){
+				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_MENU_BG, ui_font_size, ui_str_id[j], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+			}else{
+				if(j==(wIndex%SETUPMENU_TOTAL)){
+					ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, 0, (ui_gap+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size, ui_str_id[j], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 				}else{
-					if(j==(wIndex%SETUPMENU_TOTAL)){
-						ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, 0, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-						host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[j], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-					}else{
-						host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[j], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-					}
+					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size, ui_str_id[j], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 				}
-				i++;
 			}
-		}
-	}else{
-		for(j=0; j<SETUPMENU_TOTAL; j++){
-			if(s_setup_osd.ui_main_turnoff[j] == 0){
-				if(s_setup_osd.ui_main_disabled[j] == 1){
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, ui_str_id[j], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}else{
-					if(j==(wIndex%SETUPMENU_TOTAL)){
-						ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, 0, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-						host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[j], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-					}else{
-						host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, ui_str_id[j], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-					}
-				}
-				i++;
-			}
+			i++;
 		}
 	}
 }
@@ -364,34 +349,18 @@ void OSDLib_DrawImageMenu(AB_OSD_BUF_ST s_dst_buf, uint16_t wIndex, HOST_OSD_MEN
 	}
 
 	//title
-	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_DARKGRAY, ui_font_size, _STR_IMAGE_, (ui_base_title_w/2)*ui_times/divisor, (ui_gap/2+2)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
+	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_GRAY, ui_font_size, _STR_IMAGE_, (ui_base_title_w/2)*ui_times/divisor, (ui_gap/2+2)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
 	
 	// item
-	if(ui_menu_item==HOST_OSD_MENU_IMAGE){
-		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, 0, ui_gap*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
-		for(i=0; i<HOSTMI_IMAGE_TOTAL; i++){
-			if(s_setup_osd.ui_image_disabled[i] == 1){
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[i], ui_base_x*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+	for(i=0; i<HOSTMI_IMAGE_TOTAL; i++){
+		if(s_setup_osd.ui_image_disabled[i] == 1){
+			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_MENU_BG, ui_font_size, ui_str_id[i], ui_base_x*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		}else{
+			if(i==(wIndex%HOSTMI_IMAGE_TOTAL)){
+				ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, 0, (ui_gap+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size, ui_str_id[i], ui_base_x*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 			}else{
-				if(i==(wIndex%HOSTMI_IMAGE_TOTAL)){
-					ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, 0, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], ui_base_x*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}else{
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[i], ui_base_x*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}
-			}
-		}
-	}else{
-		for(i=0; i<HOSTMI_IMAGE_TOTAL; i++){
-			if(s_setup_osd.ui_image_disabled[i] == 1){
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, ui_str_id[i], ui_base_x*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}else{
-				if(i==(wIndex%HOSTMI_IMAGE_TOTAL)){
-					ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, 0, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], ui_base_x*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}else{
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, ui_str_id[i], ui_base_x*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}
+				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size, ui_str_id[i], ui_base_x*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 			}
 		}
 	}
@@ -447,34 +416,18 @@ void OSDLib_DrawHdmiMenu(AB_OSD_BUF_ST s_dst_buf, uint16_t wIndex, HOST_OSD_MENU
 	}
 
 	//title
-	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_DARKGRAY, ui_font_size, _STR_HDMI_OUTPUT_, (ui_base_title_w/2)*ui_times/divisor, (ui_gap/2+2)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
+	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_GRAY, ui_font_size, _STR_HDMI_OUTPUT_, (ui_base_title_w/2)*ui_times/divisor, (ui_gap/2+2)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
 	
 	// item
-	if(ui_menu_item==HOST_OSD_MENU_HDMI){
-		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, 0, ui_gap*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
-		for(i=0; i<HOSTMI_HDMI_TOTAL; i++){
-			if(s_setup_osd.ui_hdmi_disabled[i] == 1){
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[i], ui_base_x*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+	for(i=0; i<HOSTMI_HDMI_TOTAL; i++){
+		if(s_setup_osd.ui_hdmi_disabled[i] == 1){
+			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_MENU_BG, ui_font_size, ui_str_id[i], ui_base_x*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		}else{
+			if(i==(wIndex%HOSTMI_HDMI_TOTAL)){
+				ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, 0, (ui_gap+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size, ui_str_id[i], ui_base_x*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 			}else{
-				if(i==(wIndex%HOSTMI_HDMI_TOTAL)){
-					ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, 0, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], ui_base_x*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}else{
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[i], ui_base_x*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}
-			}
-		}
-	}else{
-		for(i=0; i<HOSTMI_HDMI_TOTAL; i++){
-			if(s_setup_osd.ui_hdmi_disabled[i] == 1){
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, ui_str_id[i], ui_base_x*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}else{
-				if(i==(wIndex%HOSTMI_HDMI_TOTAL)){
-					ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, 0, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], ui_base_x*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}else{
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, ui_str_id[i], ui_base_x*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}
+				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size, ui_str_id[i], ui_base_x*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 			}
 		}
 	}
@@ -520,44 +473,28 @@ void OSDLib_DrawHdmiResolutionMenu(AB_OSD_BUF_ST s_dst_buf, uint16_t wIndex, HOS
 	if(s_setup_osd.ui_osd_type == HOST_OSD_TYPE_ENC){
 		ui_font_size = s_setup_osd.ui_enc_font_size;
 		ui_base_x = s_setup_osd.ui_enc_base_w/3+30;
-		ui_base_w = s_setup_osd.ui_enc_base_w/3+20;
+		ui_base_w = s_setup_osd.ui_enc_base_w/3;
 		ui_base_h = s_setup_osd.ui_enc_base_h;
 		ui_gap = s_setup_osd.ui_enc_base_h/12;
 	}else{
 		ui_font_size = s_setup_osd.ui_display_font_size;
 		ui_base_x = s_setup_osd.ui_display_base_w/3+30;
-		ui_base_w = s_setup_osd.ui_display_base_w/3+20;
+		ui_base_w = s_setup_osd.ui_display_base_w/3;
 		ui_base_h = s_setup_osd.ui_display_base_h;
 		ui_gap = s_setup_osd.ui_display_base_h/12;
 	}
 
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, (ui_base_x+ui_base_w)*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
 
-	if(ui_menu_item==HOST_OSD_MENU_HDMI_RESOLUTION){
-		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, (ui_base_x+1)*ui_times/divisor, ui_gap*ui_times/divisor, (ui_base_w-2)*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
-		for(i=0; i<HOSTMI_HDMI_RESOLUTION_TOTAL; i++){
-			if(s_setup_osd.ui_hdmi_resolution_disabled[i]==1){
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}else{		
-				if(i==(wIndex%HOSTMI_HDMI_RESOLUTION_TOTAL)){
-					ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+1)*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-2)*ui_times/divisor, ui_gap*ui_times/divisor);
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}else{
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}
-			}
-		}
-	}else{
-		for(i=0; i<HOSTMI_HDMI_RESOLUTION_TOTAL; i++){
-			if(s_setup_osd.ui_hdmi_resolution_disabled[i]==1){
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}else{		
-				if(i==(wIndex%HOSTMI_HDMI_RESOLUTION_TOTAL)){
-					ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+1)*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-2)*ui_times/divisor, ui_gap*ui_times/divisor);
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}else{
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}
+	for(i=0; i<HOSTMI_HDMI_RESOLUTION_TOTAL; i++){
+		if(s_setup_osd.ui_hdmi_resolution_disabled[i]==1){
+			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_MENU_BG, ui_font_size-2*ui_times/divisor, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		}else{		
+			if(i==(wIndex%HOSTMI_HDMI_RESOLUTION_TOTAL)){
+				ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_base_x*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+			}else{
+				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size-2*ui_times/divisor, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 			}
 		}
 	}
@@ -604,53 +541,52 @@ void OSDLib_DrawTimeMunualMenu(AB_OSD_BUF_ST s_dst_buf, uint16_t wIndex, HOST_OS
 	if(s_setup_osd.ui_osd_type == HOST_OSD_TYPE_ENC){
 		ui_font_size = s_setup_osd.ui_enc_font_size;
 		ui_base_x = s_setup_osd.ui_enc_base_w/3+30;
-		ui_base_w = s_setup_osd.ui_enc_base_w/3+20;
+		ui_base_w = s_setup_osd.ui_enc_base_w/3;
 		ui_base_h = s_setup_osd.ui_enc_base_h;
 		ui_gap = s_setup_osd.ui_enc_base_h/12;
 	}else{
 		ui_font_size = s_setup_osd.ui_display_font_size;
 		ui_base_x = s_setup_osd.ui_display_base_w/3+30;
-		ui_base_w = s_setup_osd.ui_display_base_w/3+20;
+		ui_base_w = s_setup_osd.ui_display_base_w/3;
 		ui_base_h = s_setup_osd.ui_display_base_h;
 		ui_gap = s_setup_osd.ui_display_base_h/12;
 	}
-	
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);	
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, (ui_base_x+1)*ui_times/divisor, ui_gap*ui_times/divisor, (ui_base_w-2)*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
 	
 	if(ui_menu_item == HOST_OSD_MENU_TIME_TIMESETUP_MANUAL_TIME_HOUR){
 		i = 0;
 		snprintf(hour, sizeof(hour), "%02d", s_setup_time.i_hour);
 		snprintf(min, sizeof(min), "%02d", s_setup_time.i_min);
 		snprintf(sec, sizeof(sec), "%02d", s_setup_time.i_sec);
-		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+1)*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, hour, (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, (ui_base_x+ui_base_w)*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_base_x*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLUE, COLOR_ARGB8888_WHITE, ui_font_size, hour, (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, " : ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, " : ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, min, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, min, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		#if 0
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, " : ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, " : ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, sec, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, sec, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		#endif
 	}else if(ui_menu_item == HOST_OSD_MENU_TIME_TIMESETUP_MANUAL_TIME_MIN){
 		i = 0;
 		snprintf(hour, sizeof(hour), "%02d", s_setup_time.i_hour);
 		snprintf(min, sizeof(min), "%02d", s_setup_time.i_min);
 		snprintf(sec, sizeof(sec), "%02d", s_setup_time.i_sec);
-		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+1)*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, hour, (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, (ui_base_x+ui_base_w)*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_base_x*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, hour, (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, " : ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, " : ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, min, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLUE, COLOR_ARGB8888_WHITE, ui_font_size, min, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		#if 0
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, " : ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, " : ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, sec, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, sec, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		#endif
 	#if 0
 	}else if(ui_menu_item == HOST_OSD_MENU_TIME_TIMESETUP_MANUAL_TIME_SEC){
@@ -658,64 +594,69 @@ void OSDLib_DrawTimeMunualMenu(AB_OSD_BUF_ST s_dst_buf, uint16_t wIndex, HOST_OS
 		snprintf(hour, sizeof(hour), "%02d", s_setup_time.i_hour);
 		snprintf(min, sizeof(min), "%02d", s_setup_time.i_min);
 		snprintf(sec, sizeof(sec), "%02d", s_setup_time.i_sec);
-		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+1)*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, hour, (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, (ui_base_x+ui_base_w)*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_base_x*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, hour, (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, " : ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, " : ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, min, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, min, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, " : ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, " : ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, sec, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLUE, COLOR_ARGB8888_WHITE, ui_font_size, sec, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 	#endif
 	}else if(ui_menu_item == HOST_OSD_MENU_TIME_TIMESETUP_MANUAL_DATE_YEAR){
 		i = 1;
 		snprintf(year, sizeof(year), "%04d", s_setup_time.i_year);
 		snprintf(month, sizeof(month), "%02d", s_setup_time.i_mon);
 		snprintf(day, sizeof(day), "%02d", s_setup_time.i_day);
-		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+1)*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, year, (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, (ui_base_x+ui_base_w)*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_base_x*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLUE, COLOR_ARGB8888_WHITE, ui_font_size, year, (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, " / ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, " / ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, month, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, month, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, " / ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, " / ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, day, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, day, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 	}else if(ui_menu_item == HOST_OSD_MENU_TIME_TIMESETUP_MANUAL_DATE_MONTH){
 		i = 1;
 		snprintf(year, sizeof(year), "%04d", s_setup_time.i_year);
 		snprintf(month, sizeof(month), "%02d", s_setup_time.i_mon);
 		snprintf(day, sizeof(day), "%02d", s_setup_time.i_day);
-		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+1)*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, year, (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, (ui_base_x+ui_base_w)*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_base_x*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, year, (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, " / ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, " / ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, month, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLUE, COLOR_ARGB8888_WHITE, ui_font_size, month, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, " / ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, " / ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, day, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, day, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 	}else if(ui_menu_item == HOST_OSD_MENU_TIME_TIMESETUP_MANUAL_DATE_DAY){
 		i = 1;
 		snprintf(year, sizeof(year), "%04d", s_setup_time.i_year);
 		snprintf(month, sizeof(month), "%02d", s_setup_time.i_mon);
 		snprintf(day, sizeof(day), "%02d", s_setup_time.i_day);
-		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+1)*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, year, (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, (ui_base_x+ui_base_w)*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_base_x*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, year, (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, " / ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, " / ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, month, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, month, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_MEDIUMGRAY, COLOR_ARGB8888_PICKGRAY, ui_font_size, " / ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, " / ", (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		ui_length = ui_length + s_dst_rect.ui_w;
-		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, day, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLUE, COLOR_ARGB8888_WHITE, ui_font_size, day, (ui_base_x+10)*ui_times/divisor+ui_length, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 	}
 }
+
 
 void OSDLib_DrawLanguageMenu(AB_OSD_BUF_ST s_dst_buf, uint16_t wIndex, HOST_OSD_MENU_RESOLUTION nResolution)
 {
@@ -752,39 +693,26 @@ void OSDLib_DrawLanguageMenu(AB_OSD_BUF_ST s_dst_buf, uint16_t wIndex, HOST_OSD_
 	if(s_setup_osd.ui_osd_type == HOST_OSD_TYPE_ENC){
 		ui_font_size = s_setup_osd.ui_enc_font_size;
 		ui_base_x = s_setup_osd.ui_enc_base_w/3+30;
-		ui_base_w = s_setup_osd.ui_enc_base_w/3+20;
+		ui_base_w = s_setup_osd.ui_enc_base_w/3;
 		ui_base_h = s_setup_osd.ui_enc_base_h;
 		ui_gap = s_setup_osd.ui_enc_base_h/12;
 	}else{
 		ui_font_size = s_setup_osd.ui_display_font_size;
 		ui_base_x = s_setup_osd.ui_display_base_w/3+30;
-		ui_base_w = s_setup_osd.ui_display_base_w/3+20;
+		ui_base_w = s_setup_osd.ui_display_base_w/3;
 		ui_base_h = s_setup_osd.ui_display_base_h;
 		ui_gap = s_setup_osd.ui_display_base_h/12;
 	}
 
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, (ui_base_x+ui_base_w)*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
 
-	if(ui_menu_item==HOST_OSD_MENU_LANGUAGE){
-		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, (ui_base_x+1)*ui_times/divisor, ui_gap*ui_times/divisor, (ui_base_w-2)*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
-		for(i=0; i<HOSTMI_LANGUAGE_TOTAL; i++){		
-			host_setup_set_language(i);
-			if(i==(wIndex%HOSTMI_LANGUAGE_TOTAL)){
-				ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+1)*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-2)*ui_times/divisor, ui_gap*ui_times/divisor);
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}else{
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}
-		}
-	}else{
-		for(i=0; i<HOSTMI_LANGUAGE_TOTAL; i++){		
-			host_setup_set_language(i);
-			if(i==(wIndex%HOSTMI_LANGUAGE_TOTAL)){
-				ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+1)*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-2)*ui_times/divisor, ui_gap*ui_times/divisor);
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}else{
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}
+	for(i=0; i<HOSTMI_LANGUAGE_TOTAL; i++){		
+		host_setup_set_language(i);
+		if(i==(wIndex%HOSTMI_LANGUAGE_TOTAL)){
+			ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_base_x*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		}else{
+			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size-2*ui_times/divisor, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		}
 	}
 }
@@ -835,27 +763,15 @@ void OSDLib_Draw1stMenu(AB_OSD_BUF_ST s_dst_buf, uint32_t ui_str_title, uint32_t
 	}
 
 	//title
-	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_DARKGRAY, ui_font_size, ui_str_title, (ui_base_title_w/2)*ui_times/divisor, (ui_gap/2+2)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
+	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_GRAY, ui_font_size, ui_str_title, (ui_base_title_w/2)*ui_times/divisor, (ui_gap/2+2)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
 	
 	// item
-	if(ui_menu_item==HOST_OSD_MENU_TIME_TIMESETUP_MANUAL){
-		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, 0, ui_gap*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
-		for(i=0; i<wTotalIndex; i++){
-			if(i==(wIndex%wTotalIndex)){
-				ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, 0, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}else{
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}
-		}
-	}else{
-		for(i=0; i<wTotalIndex; i++){
-			if(i==(wIndex%wTotalIndex)){
-				ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, 0, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}else{
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}
+	for(i=0; i<wTotalIndex; i++){
+		if(i==(wIndex%wTotalIndex)){
+			ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, 0, (ui_gap+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		}else{
+			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		}
 	}
 }
@@ -896,9 +812,9 @@ void OSDLib_Draw2ndMenu(AB_OSD_BUF_ST s_dst_buf, uint32_t ui_str_id[], uint16_t 
 		ui_base_x = s_setup_osd.ui_enc_base_w/3+30;
 		ui_base_h = s_setup_osd.ui_enc_base_h;
 		if((ui_menu_item == HOST_OSD_MENU_WB) || (ui_menu_item == HOST_OSD_MENU_STITCHALG)){
-			ui_base_w = s_setup_osd.ui_enc_base_w-ui_base_x;
+			ui_base_w = s_setup_osd.ui_enc_base_w/3+60;
 		}else{
-			ui_base_w = s_setup_osd.ui_enc_base_w/3+20;
+			ui_base_w = s_setup_osd.ui_enc_base_w/3;
 		}
 		ui_gap = s_setup_osd.ui_enc_base_h/12;
 	}else{
@@ -906,45 +822,22 @@ void OSDLib_Draw2ndMenu(AB_OSD_BUF_ST s_dst_buf, uint32_t ui_str_id[], uint16_t 
 		ui_base_x = s_setup_osd.ui_display_base_w/3+30;
 		ui_base_h = s_setup_osd.ui_display_base_h;
 		if((ui_menu_item == HOST_OSD_MENU_WB) || (ui_menu_item == HOST_OSD_MENU_STITCHALG)){
-			ui_base_w = s_setup_osd.ui_display_base_w-ui_base_x;
+			ui_base_w = s_setup_osd.ui_display_base_w/3+60;
 		}else{
-			ui_base_w = s_setup_osd.ui_display_base_w/3+20;
+			ui_base_w = s_setup_osd.ui_display_base_w/3;
 		}
 		ui_gap = s_setup_osd.ui_display_base_h/12;
 	}
 
-	if(!(ui_menu_item == HOST_OSD_MENU_WB) || (ui_menu_item == HOST_OSD_MENU_STITCHALG)){
-		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
-	}
-	
-	if(ui_menu_item==HOST_OSD_MENU_TIME_DISPLAY || ui_menu_item==HOST_OSD_MENU_TIME_TIMESETUP){
-		for(i=0; i<wTotalIndex; i++){
-			if(i==(wIndex%wTotalIndex)){
-				ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+1)*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-2)*ui_times/divisor, ui_gap*ui_times/divisor);
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}else{
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}
-		}   
-	}else{
-		if((ui_menu_item == HOST_OSD_MENU_WB) || (ui_menu_item == HOST_OSD_MENU_STITCHALG)){
-			ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, (ui_base_x+1)*ui_times/divisor, ui_gap*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, (ui_base_x+ui_base_w)*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+
+	for(i=0; i<wTotalIndex; i++){
+		if(i==(wIndex%wTotalIndex)){
+			ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_base_x*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		}else{
-			ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, (ui_base_x+1)*ui_times/divisor, ui_gap*ui_times/divisor, (ui_base_w-2)*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size-2*ui_times/divisor, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		}
-		
-		for(i=0; i<wTotalIndex; i++){
-			if(i==(wIndex%wTotalIndex)){
-				if((ui_menu_item == HOST_OSD_MENU_WB) || (ui_menu_item == HOST_OSD_MENU_STITCHALG)){
-					ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+1)*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-				}else{
-					ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+1)*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-2)*ui_times/divisor, ui_gap*ui_times/divisor);
-				}
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}else{
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}
-		}  
 	}
 }
 
@@ -954,7 +847,6 @@ void OSDLib_Draw3rdMenu(AB_OSD_BUF_ST s_dst_buf, uint32_t ui_str_id[], uint16_t 
 	AB_OSD_RECT_ST s_dst_rect = {0};
 	uint32_t ui_base_x = 0;
 	uint32_t ui_base_w = 0;
-	uint32_t ui_base_h = 0;
 	uint32_t ui_gap = 0;
 	uint32_t ui_times = 30;
 	uint32_t divisor = 10;
@@ -981,31 +873,22 @@ void OSDLib_Draw3rdMenu(AB_OSD_BUF_ST s_dst_buf, uint32_t ui_str_id[], uint16_t 
 	
 	if(s_setup_osd.ui_osd_type == HOST_OSD_TYPE_ENC){
 		ui_font_size = s_setup_osd.ui_enc_font_size;
-		ui_base_x = s_setup_osd.ui_enc_base_w*2/3+50;
-		ui_base_w = s_setup_osd.ui_enc_base_w/3-50;
-		ui_base_h = s_setup_osd.ui_enc_base_h;
+		ui_base_x = s_setup_osd.ui_enc_base_w*2/3+30;
+		ui_base_w = s_setup_osd.ui_enc_base_w/3-30-2;
 		ui_gap = s_setup_osd.ui_enc_base_h/12;
 	}else{
 		ui_font_size = s_setup_osd.ui_display_font_size;
-		ui_base_x = s_setup_osd.ui_display_base_w*2/3+50;
-		ui_base_w = s_setup_osd.ui_display_base_w/3-50;
-		ui_base_h = s_setup_osd.ui_display_base_h;
+		ui_base_x = s_setup_osd.ui_display_base_w*2/3+30;
+		ui_base_w = s_setup_osd.ui_display_base_w/3-30-2;
 		ui_gap = s_setup_osd.ui_display_base_h/12;
 	}
 
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, (ui_base_x+1)*ui_times/divisor, ui_gap*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
-	if(nResolution == HOST_OSD_MENU_RESOLUTION_FULLHD) ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, 
-	                                                   (ui_base_x+1)*ui_times/divisor+(ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor, 
-	                                                   s_setup_osd.ui_enc_w-((ui_base_x+1)*ui_times/divisor+(ui_base_w-1)*ui_times/divisor), (ui_base_h-ui_gap)*ui_times/divisor);
 	for(i=0; i<wTotalIndex; i++){
 		if(i==(wIndex%wTotalIndex)){
-			ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+1)*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-			if(nResolution == HOST_OSD_MENU_RESOLUTION_FULLHD) ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, 
-			                                                   (ui_base_x+1)*ui_times/divisor+(ui_base_w-1)*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, 
-			                                                   s_setup_osd.ui_enc_w-((ui_base_x+1)*ui_times/divisor+(ui_base_w-1)*ui_times/divisor), ui_gap*ui_times/divisor);
-			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+			ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_base_x*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, ui_str_id[i], (ui_base_x+6)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		}else{
-			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size-2*ui_times/divisor, ui_str_id[i], (ui_base_x+6)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		}
 	}
 }
@@ -1019,16 +902,12 @@ void OSDLib_DrawMenuAdjustValue(AB_OSD_BUF_ST s_dst_buf, uint32_t nCurIndex, uin
 	uint32_t ui_times = 30;
 	uint32_t divisor = 10;
 	uint32_t ui_font_size = 0;
+	uint32_t ui_base_x = 0;
+	uint32_t ui_base_y = 0;
 	uint32_t ui_base_w = 0;
 	uint32_t ui_base_h = 0;
-	uint32_t ui_base_bg_x = 0;
-	uint32_t ui_base_bg_y = 0;
-	uint32_t ui_base_bg_w = 0;
-	uint32_t ui_base_bg_h = 0;
-	uint32_t ui_bar_x = 0;
-	uint32_t ui_bar_y = 0;
-	uint32_t ui_bar_w = 0;
-	uint32_t ui_bar_h = 0;
+	uint32_t ui_base_ai_x = 0;
+	uint32_t ui_base_note_x = 0;
 	uint32_t ui_gap = 0;
 	uint32_t ui_str_id[2] = {_STR_AI_SETTING_NOTE_1_, _STR_AI_SETTING_NOTE_2_};
 	
@@ -1058,90 +937,62 @@ void OSDLib_DrawMenuAdjustValue(AB_OSD_BUF_ST s_dst_buf, uint32_t nCurIndex, uin
 	if(s_setup_osd.ui_osd_type == HOST_OSD_TYPE_ENC){
 		ui_font_size = s_setup_osd.ui_enc_font_size;
 		if(gs_ui.uw_mode == UI_MODE_SETUP_MENU_MAIN){
-			ui_bar_x = s_setup_osd.ui_enc_base_w*2/3+4;
-			
-			ui_base_bg_x = s_setup_osd.ui_enc_base_w/3+30;
-			ui_base_bg_y = s_setup_osd.ui_enc_base_h/12;
-			ui_base_bg_w = s_setup_osd.ui_enc_base_w*2/3-30;
-			ui_base_bg_h = s_setup_osd.ui_enc_base_h-ui_base_bg_y;
+			ui_base_x = (s_setup_osd.ui_enc_base_w/3+30) + (s_setup_osd.ui_enc_base_w - (s_setup_osd.ui_enc_base_w/3+30))/2 - 20;
+			ui_base_note_x = s_setup_osd.ui_enc_base_w/3+30;
 		}else{
-			ui_bar_x = s_setup_osd.ui_enc_base_w*3/4-10;
-			
-			ui_base_bg_x = s_setup_osd.ui_enc_base_w/2;
-			ui_base_bg_y = s_setup_osd.ui_enc_base_h/12;
-			ui_base_bg_w = s_setup_osd.ui_enc_base_w/2;
-			ui_base_bg_h = s_setup_osd.ui_enc_base_h-ui_base_bg_y;
+			ui_base_x = (s_setup_osd.ui_enc_base_w/2) + (s_setup_osd.ui_enc_base_w - (s_setup_osd.ui_enc_base_w/2))/2 - 20;
+			ui_base_note_x = s_setup_osd.ui_enc_base_w/2;
 		}
-		ui_bar_w = 20;
 		ui_base_w = s_setup_osd.ui_enc_base_w;
-		ui_base_h = s_setup_osd.ui_enc_base_h;
+		ui_base_h = 132;
+		ui_base_ai_x = (s_setup_osd.ui_enc_base_w/3+30) + (s_setup_osd.ui_enc_base_w - (s_setup_osd.ui_enc_base_w/3+30))/2;
 		ui_gap = s_setup_osd.ui_enc_base_h/12;
 		if(ui_menu_item == HOST_OSD_MENU_AI){
-			ui_bar_h = 120;
-			ui_bar_y = ui_gap*5-ui_bar_h/2;
+			ui_base_y = ui_gap*11/4;
 		}else{
-			ui_bar_h = 160;
-			ui_bar_y = ui_gap*6+ui_gap/2-ui_bar_h/2;
+			ui_base_y = ui_gap*7/2;
 		}
 	}else{
 		ui_font_size = s_setup_osd.ui_display_font_size;
 		if(gs_ui.uw_mode == UI_MODE_SETUP_MENU_MAIN){
-			ui_bar_x = s_setup_osd.ui_display_base_w*2/3+4;
-			
-			ui_base_bg_x = s_setup_osd.ui_display_base_w/3+30;
-			ui_base_bg_y = s_setup_osd.ui_display_base_h/12;
-			ui_base_bg_w = s_setup_osd.ui_display_base_w*2/3-30;
-			ui_base_bg_h = s_setup_osd.ui_display_base_h-ui_base_bg_y;
+			ui_base_x = (s_setup_osd.ui_display_base_w/3+30) + (s_setup_osd.ui_display_base_w - (s_setup_osd.ui_display_base_w/3+30))/2 - 20;
+			ui_base_note_x	= s_setup_osd.ui_display_base_w/3+30;
 		}else{
-			ui_bar_x = s_setup_osd.ui_display_base_w*3/4-10;
-			
-			ui_base_bg_x = s_setup_osd.ui_display_base_w/2;
-			ui_base_bg_y = s_setup_osd.ui_display_base_h/12;
-			ui_base_bg_w = s_setup_osd.ui_display_base_w/2;
-			ui_base_bg_h = s_setup_osd.ui_display_base_h-ui_base_bg_y;
+			ui_base_x = (s_setup_osd.ui_display_base_w/2) + (s_setup_osd.ui_display_base_w - (s_setup_osd.ui_display_base_w/2))/2 - 20;
+			ui_base_note_x = s_setup_osd.ui_enc_base_w/2;
 		}
-		ui_bar_w = 20;
 		ui_base_w = s_setup_osd.ui_display_base_w;
-		ui_base_h = s_setup_osd.ui_display_base_h;
+		ui_base_h = 132;
+		ui_base_ai_x = (s_setup_osd.ui_display_base_w/3+30) + (s_setup_osd.ui_display_base_w - (s_setup_osd.ui_display_base_w/3+30))/2;
 		ui_gap = s_setup_osd.ui_display_base_h/12;
 		if(ui_menu_item == HOST_OSD_MENU_AI){
-			ui_bar_h = 120;
-			ui_bar_y = ui_gap*5-ui_bar_h/2;
+			ui_base_y = ui_gap*11/4;
 		}else{
-			ui_bar_h = 160;
-			ui_bar_y = ui_gap*6+ui_gap/2-ui_bar_h/2;
+			ui_base_y = ui_gap*7/2;
 		}
 	}
 
 	
 	// Draw Adjust Menu
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, (ui_base_bg_x+1)*ui_times/divisor, ui_base_bg_y*ui_times/divisor, (ui_base_bg_w-1)*ui_times/divisor, ui_base_bg_h*ui_times/divisor);
-	if(nResolution == HOST_OSD_MENU_RESOLUTION_FULLHD) ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, 
-	                                                   (ui_base_bg_x+1)*ui_times/divisor+(ui_base_bg_w-1)*ui_times/divisor, ui_base_bg_y*ui_times/divisor, 
-	                                                   s_setup_osd.ui_enc_w-((ui_base_bg_x+1)*ui_times/divisor+(ui_base_bg_w-1)*ui_times/divisor), ui_base_bg_h*ui_times/divisor);
-
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_MEDIUMGRAY, ui_bar_x*ui_times/divisor, ui_bar_y*ui_times/divisor, ui_bar_w*ui_times/divisor, ui_bar_h*ui_times/divisor);
-
-	ab_osd_draw_line(&s_dst_buf, COLOR_ARGB8888_MEDIUMGRAY, 2*ui_times/divisor, (ui_bar_x+ui_bar_w+14)*ui_times/divisor, (ui_bar_y+ui_bar_h/2-20)  *ui_times/divisor, (ui_bar_x+ui_bar_w+20)*ui_times/divisor, (ui_bar_y+ui_bar_h/2-20-6)*ui_times/divisor);
-	ab_osd_draw_line(&s_dst_buf, COLOR_ARGB8888_MEDIUMGRAY, 2*ui_times/divisor, (ui_bar_x+ui_bar_w+20)*ui_times/divisor, (ui_bar_y+ui_bar_h/2-20-6)*ui_times/divisor, (ui_bar_x+ui_bar_w+26)*ui_times/divisor, (ui_bar_y+ui_bar_h/2-20)  *ui_times/divisor);
-	ab_osd_draw_line(&s_dst_buf, COLOR_ARGB8888_MEDIUMGRAY, 2*ui_times/divisor, (ui_bar_x+ui_bar_w+14)*ui_times/divisor, (ui_bar_y+ui_bar_h/2+20)  *ui_times/divisor, (ui_bar_x+ui_bar_w+20)*ui_times/divisor, (ui_bar_y+ui_bar_h/2+20+6)*ui_times/divisor);
-	ab_osd_draw_line(&s_dst_buf, COLOR_ARGB8888_MEDIUMGRAY, 2*ui_times/divisor, (ui_bar_x+ui_bar_w+20)*ui_times/divisor, (ui_bar_y+ui_bar_h/2+20+6)*ui_times/divisor, (ui_bar_x+ui_bar_w+26)*ui_times/divisor, (ui_bar_y+ui_bar_h/2+20)  *ui_times/divisor);
-	
-	ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_PICKGRAY, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, nValue2,	(ui_bar_x+ui_bar_w/2)*ui_times/divisor, (ui_bar_y-20)         *ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
-	ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_PICKGRAY, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, nValue3, (ui_bar_x+ui_bar_w/2)*ui_times/divisor, (ui_bar_y+ui_bar_h+20+2)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_base_x*ui_times/divisor, ui_base_y*ui_times/divisor, 20*ui_times/divisor, ui_base_h*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_MENU_BG, (ui_base_x+2)*ui_times/divisor, (ui_base_y+2)*ui_times/divisor, (20-4)*ui_times/divisor, (ui_base_h-4)*ui_times/divisor);
+	ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size, "+",		(ui_base_x+10)*ui_times/divisor, (ui_base_y-8)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
+	ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size-2*ui_times/divisor, nValue2,	(ui_base_x+40)*ui_times/divisor, (ui_base_y)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
+	ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size, "-",		(ui_base_x+10)*ui_times/divisor, (ui_base_y+148)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
+	ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size-2*ui_times/divisor, nValue3,		(ui_base_x+40)*ui_times/divisor, (ui_base_y+ui_base_h)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
 
 	//Draw Adjust Value
-	ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, nValue1,	(ui_bar_x+ui_bar_w+20)*ui_times/divisor, (ui_bar_y+ui_bar_h/2+2)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
+	ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size-2*ui_times/divisor, nValue1,	(ui_base_x+40)*ui_times/divisor, (ui_base_y+66+2)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
 	if(nCurIndex>0){
-		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, ui_bar_x*ui_times/divisor, (ui_bar_y+(ui_bar_h-ui_bar_h*nCurIndex/nTotalIndex))*ui_times/divisor, ui_bar_w*ui_times/divisor, ui_bar_h*nCurIndex/nTotalIndex*ui_times/divisor);
-		//if(nResolution == HOST_OSD_MENU_RESOLUTION_FULLHD)ab_osd_draw_rectangle(&s_dst_buf, 0xFF00FFFF, (ui_base_x+2)*ui_times/divisor, (ui_base_y+ui_base_h-4-2)*ui_times/divisor, (20-4)*ui_times/divisor, 4*ui_times/divisor);
+		ab_osd_draw_rectangle(&s_dst_buf, 0xFF00FFFF, (ui_base_x+2)*ui_times/divisor, (ui_base_y+2+((ui_base_h-4)-((ui_base_h-4)*nCurIndex)/nTotalIndex))*ui_times/divisor, (20-4)*ui_times/divisor, (((ui_base_h-4)*nCurIndex)/nTotalIndex)*ui_times/divisor);
+		if(nResolution == HOST_OSD_MENU_RESOLUTION_FULLHD)ab_osd_draw_rectangle(&s_dst_buf, 0xFF00FFFF, (ui_base_x+2)*ui_times/divisor, (ui_base_y+ui_base_h-4-2)*ui_times/divisor, (20-4)*ui_times/divisor, 4*ui_times/divisor);
 	}
 
 	// Draw Note
 	if(ui_menu_item == HOST_OSD_MENU_AI){
-		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, ui_base_bg_x*ui_times/divisor, ui_gap*9*ui_times/divisor, (ui_base_w-ui_base_bg_x)*ui_times/divisor, (ui_base_h-ui_gap*9)*ui_times/divisor);
-		host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[0], (ui_bar_x+ui_bar_w/2)*ui_times/divisor, (ui_gap*10)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
-		host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[1], (ui_bar_x+ui_bar_w/2)*ui_times/divisor, (ui_gap*11)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
+		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_base_note_x*ui_times/divisor, ui_gap*10*ui_times/divisor, (ui_base_w-ui_base_note_x-2)*ui_times/divisor, 2*ui_times/divisor);
+		host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size-2*ui_times/divisor, ui_str_id[0], ui_base_ai_x*ui_times/divisor, (ui_gap*43/4)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
+		host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size-2*ui_times/divisor, ui_str_id[1], ui_base_ai_x*ui_times/divisor, (ui_gap*45/4)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
 	}
 }
 
@@ -1719,6 +1570,63 @@ void host_setup_menu_display_osd_StitchAlg_Check_draw(char* sz_text[], uint8_t n
 	if(ntotaltext>5)ntotaltext = 5;
 	for(i=0; i<ntotaltext; i++){
 		ab_osd_draw_text(&gs_osd_display_buf, &s_dst_rect, ui_argb8888_color, ui_argb8888_bg_color, ui_font_size+10, sz_text[i], ui_x*ui_times/divisor, (ui_gap/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
+	}
+	
+	s_setup_osd.b_display_need_update = TRUE;
+}
+
+void host_setup_menu_display_osd_Warning_draw(char* sz_text[], uint8_t ntotaltext, uint32_t ui_argb8888_color, uint32_t ui_argb8888_bg_color)
+{
+	if(s_setup_osd.b_is_init == 0){
+		printf("OSD Buffer not created!\n");
+		return;
+	}
+
+	AB_OSD_RECT_ST s_dst_rect = {0};
+	uint8_t i = 0;
+	uint32_t ui_x = 0;
+	uint32_t ui_base_w = 0;
+	uint32_t ui_base_h = 0;	
+	uint32_t ui_gap = 0;
+	uint32_t ui_times = 30;
+	uint32_t divisor = 10;
+	uint32_t ui_font_size = 0;
+
+	switch(s_setup_osd.ui_display_resolution){
+		case HOST_OSD_MENU_RESOLUTION_8K:
+			ui_times = 60;
+			break;
+			
+		default:
+		case HOST_OSD_MENU_RESOLUTION_4K:
+			ui_times = 30;
+			break;
+			
+		case HOST_OSD_MENU_RESOLUTION_FULLHD:
+			ui_times = 15;
+			break;
+			
+		case HOST_OSD_MENU_RESOLUTION_HD:
+			ui_times = 10;
+			break;		
+	}
+
+	s_setup_osd.b_display_need_update = FALSE;
+
+	ui_font_size = s_setup_osd.ui_display_font_size;
+	ui_base_w = s_setup_osd.ui_display_base_w;
+	ui_base_h = s_setup_osd.ui_display_base_h;
+	ui_gap = ui_base_h/5;
+
+	ui_x = ui_base_w/2;
+
+	ab_osd_draw_rectangle(&gs_osd_display_buf, ui_argb8888_bg_color, ui_base_w/8*ui_times/divisor, ui_base_h/8*ui_times/divisor, ui_base_w*6/8*ui_times/divisor, ui_base_h*6/8*ui_times/divisor);
+	ab_osd_draw_hollow_rectangle(&gs_osd_display_buf, COLOR_ARGB8888_WHITE, 2*ui_times/divisor, ui_base_w/8*ui_times/divisor, ui_base_h/8*ui_times/divisor, ui_base_w*6/8*ui_times/divisor, ui_base_h*6/8*ui_times/divisor);
+	ab_osd_draw_text(&gs_osd_display_buf, &s_dst_rect, ui_argb8888_color, ui_argb8888_bg_color, ui_font_size, "Warning", (ui_base_w/2)*ui_times/divisor, (ui_base_h/8+30)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
+
+	if(ntotaltext>5)ntotaltext = 5;
+	for(i=0; i<ntotaltext; i++){
+		ab_osd_draw_text(&gs_osd_display_buf, &s_dst_rect, ui_argb8888_color, ui_argb8888_bg_color, ui_font_size+10, sz_text[i], ui_x*ui_times/divisor, (ui_base_h/8+90+ui_gap*i)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
 	}
 	
 	s_setup_osd.b_display_need_update = TRUE;
@@ -2310,6 +2218,62 @@ void host_setup_menu_enc_osd_StitchAlg_Check_draw(char* sz_text[], uint8_t ntota
 	s_setup_osd.b_enc_need_update = TRUE;
 }
 
+void host_setup_menu_enc_osd_Warning_draw(char* sz_text[], uint8_t ntotaltext, uint32_t ui_argb8888_color, uint32_t ui_argb8888_bg_color)
+{	
+	if(s_setup_osd.b_is_init == 0){
+		printf("OSD Buffer not created!\n");
+		return;
+	}
+	
+	AB_OSD_RECT_ST s_dst_rect = {0};
+	uint8_t i = 0;
+	uint32_t ui_x = 0;
+	uint32_t ui_base_w = 0;
+	uint32_t ui_base_h = 0;	
+	uint32_t ui_gap = 0;
+	uint32_t ui_times = 30;
+	uint32_t divisor = 10;
+	uint32_t ui_font_size = 0;
+
+	switch(s_setup_osd.ui_enc_resolution){
+		case HOST_OSD_MENU_RESOLUTION_8K:
+			ui_times = 60;
+			break;
+			
+		default:
+		case HOST_OSD_MENU_RESOLUTION_4K:
+			ui_times = 30;
+			break;
+			
+		case HOST_OSD_MENU_RESOLUTION_FULLHD:
+			ui_times = 15;
+			break;
+			
+		case HOST_OSD_MENU_RESOLUTION_HD:
+			ui_times = 10;
+			break;		
+	}
+	s_setup_osd.b_enc_need_update = FALSE;
+
+	ui_font_size = s_setup_osd.ui_enc_font_size;
+	ui_base_w = s_setup_osd.ui_enc_base_w;
+	ui_base_h = s_setup_osd.ui_enc_base_h;
+	ui_gap = ui_base_h/5;
+
+	ui_x = ui_base_w/2;
+	
+	ab_osd_draw_rectangle(&gs_osd_enc_buf, ui_argb8888_bg_color, ui_base_w/8*ui_times/divisor, ui_base_h/8*ui_times/divisor, ui_base_w*6/8*ui_times/divisor, ui_base_h*6/8*ui_times/divisor);
+	ab_osd_draw_hollow_rectangle(&gs_osd_enc_buf, COLOR_ARGB8888_WHITE, 2*ui_times/divisor, ui_base_w/8*ui_times/divisor, ui_base_h/8*ui_times/divisor, ui_base_w*6/8*ui_times/divisor, ui_base_h*6/8*ui_times/divisor);
+	ab_osd_draw_text(&gs_osd_enc_buf, &s_dst_rect, ui_argb8888_color, ui_argb8888_bg_color, ui_font_size, "Warning", (ui_base_w/2)*ui_times/divisor, (ui_base_h/8+30)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
+
+	if(ntotaltext>5)ntotaltext = 5;
+	for(i=0; i<ntotaltext; i++){
+		ab_osd_draw_text(&gs_osd_enc_buf, &s_dst_rect, ui_argb8888_color, ui_argb8888_bg_color, ui_font_size+10, sz_text[i], ui_x*ui_times/divisor, (ui_base_h/8+90+ui_gap*i)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
+	}
+
+	s_setup_osd.b_enc_need_update = TRUE;
+}
+
 void host_setup_menu_enc_osd_Clear_draw(void)
 {
 	s_setup_osd.b_enc_need_clear = FALSE;
@@ -2336,8 +2300,8 @@ void OSDLib_DrawFactoryMenuBG(AB_OSD_BUF_ST s_dst_buf, HOST_OSD_MENU_RESOLUTION 
 	uint32_t divisor = 10;
 	uint32_t ui_font_size = 30;
 	
-	char SW_ver[30];
-	char FW_ver[30];
+	char SW_ver[30] = {0};
+	char FW_ver[30] = {0};
 	uint32_t ui_formal_version = 0, ui_major_version= 0, ui_minor_revision= 0;
 	uint32_t ui_ai_formal_version= 0, ui_ai_major_version= 0, ui_ai_minor_revision= 0;
 
@@ -2365,7 +2329,7 @@ void OSDLib_DrawFactoryMenuBG(AB_OSD_BUF_ST s_dst_buf, HOST_OSD_MENU_RESOLUTION 
 		ui_w = s_setup_osd.ui_enc_w;
 		ui_h = s_setup_osd.ui_enc_h;
 		ui_font_size = s_setup_osd.ui_enc_font_size;
-		ui_base_w = s_setup_osd.ui_enc_base_w/2;
+		ui_base_w = s_setup_osd.ui_enc_base_w/2+40;
 		ui_base_h = s_setup_osd.ui_enc_base_h;
 		ui_gap = ui_base_h/12;
 
@@ -2373,30 +2337,32 @@ void OSDLib_DrawFactoryMenuBG(AB_OSD_BUF_ST s_dst_buf, HOST_OSD_MENU_RESOLUTION 
 		ui_w = s_setup_osd.ui_display_w;
 		ui_h = s_setup_osd.ui_display_h;
 		ui_font_size = s_setup_osd.ui_display_font_size;
-		ui_base_w = s_setup_osd.ui_display_base_w/2;
+		ui_base_w = s_setup_osd.ui_display_base_w/2+40;
 		ui_base_h = s_setup_osd.ui_display_base_h;
 		ui_gap = ui_base_h/12;
 	}
 
 	// Draw Menu
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_DARKGRAY, 0, 0, ui_w, ui_gap*ui_times/divisor);
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_MEDIUMGRAY, 0, ui_gap*ui_times/divisor, ui_w, ui_h-ui_gap*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_GRAY, 0, 0, ui_w, ui_gap*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_MENU_BG, 0, ui_gap*ui_times/divisor, ui_w, ui_h-ui_gap*ui_times/divisor);
 
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_w-1)*ui_times/divisor, ui_gap*3*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap*3)*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, 0, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_base_w*ui_times/divisor, ui_gap*3*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap*3)*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_w-2*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
 
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, 0, (ui_gap*3-2)*ui_times/divisor, ui_w, 2*ui_times/divisor);
-
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, 0, ui_gap*3*ui_times/divisor, ui_w, 2*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, 0, ui_h-2*ui_times/divisor, ui_w, 2*ui_times/divisor);
 
 	//information	
 	host_get_version(&ui_formal_version, &ui_major_version, &ui_minor_revision);
 	host_get_ai_version(&ui_ai_formal_version, &ui_ai_major_version, &ui_ai_minor_revision);
 	snprintf(SW_ver, sizeof(SW_ver), "%s%02d%s%03d%s%03d", ": ", ui_ai_formal_version, ".", ui_ai_major_version, ".", ui_ai_minor_revision);
 	snprintf(FW_ver, sizeof(FW_ver), "%s%02d%s%03d%s%03d", ": ", ui_formal_version, ".", ui_major_version, ".", ui_minor_revision);
-	
-	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect1, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, _STR_SOFTWARE_VERSION_, (ui_base_w-5)*ui_times/divisor, (ui_gap*3/2+0*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_RIGHT);
-	ab_osd_draw_text(&s_dst_buf, &s_dst_rect2, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, SW_ver, ui_base_w*ui_times/divisor, (ui_gap*3/2+0*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect1, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, _STR_FIRMWARE_VERSION_, (ui_base_w-5)*ui_times/divisor, (ui_gap*3/2+1*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_RIGHT);
-	ab_osd_draw_text(&s_dst_buf, &s_dst_rect2, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, FW_ver, ui_base_w*ui_times/divisor, (ui_gap*3/2+1*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+
+	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect1, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size, _STR_SOFTWARE_VERSION_, 10*ui_times/divisor, (ui_gap*3/2+0*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+	ab_osd_draw_text(&s_dst_buf, &s_dst_rect2, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size, SW_ver, 10*ui_times/divisor+s_dst_rect1.ui_w, (ui_gap*3/2+0*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect1, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size, _STR_FIRMWARE_VERSION_, 10*ui_times/divisor, (ui_gap*3/2+1*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+	ab_osd_draw_text(&s_dst_buf, &s_dst_rect2, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size, FW_ver, 10*ui_times/divisor+s_dst_rect1.ui_w, (ui_gap*3/2+1*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 }
 
 void OSDLib_DrawFactoryMenu2pageBG(AB_OSD_BUF_ST s_dst_buf, HOST_OSD_MENU_RESOLUTION nResolution)
@@ -2444,10 +2410,13 @@ void OSDLib_DrawFactoryMenu2pageBG(AB_OSD_BUF_ST s_dst_buf, HOST_OSD_MENU_RESOLU
 	}
 
 	// Draw Menu
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_DARKGRAY, 0, 0, ui_w, ui_gap*ui_times/divisor);
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_MEDIUMGRAY, 0, ui_gap*ui_times/divisor, ui_w, ui_h-ui_gap*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_GRAY, 0, 0, ui_w, ui_gap*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_MENU_BG, 0, ui_gap*ui_times/divisor, ui_w, ui_h-ui_gap*ui_times/divisor);
 
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, 0, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_w-2*ui_times/divisor, ui_gap*ui_times/divisor, 2*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, 0, ui_h-2*ui_times/divisor, ui_w, 2*ui_times/divisor);
 }
 
 void OSDLib_DrawFactoryMainMenu(AB_OSD_BUF_ST s_dst_buf, uint16_t wIndex, HOST_OSD_MENU_RESOLUTION nResolution)
@@ -2486,101 +2455,57 @@ void OSDLib_DrawFactoryMainMenu(AB_OSD_BUF_ST s_dst_buf, uint16_t wIndex, HOST_O
 		ui_font_size  = s_setup_osd.ui_enc_font_size;
 		ui_font_size = s_setup_osd.ui_enc_font_size;
 		ui_base_title_w = s_setup_osd.ui_enc_base_w;
-		ui_base_w = s_setup_osd.ui_enc_base_w/2;
+		ui_base_w = s_setup_osd.ui_enc_base_w/2+40;
 		ui_base_h = s_setup_osd.ui_enc_base_h;
 		ui_gap = ui_base_h/12;
 	}else{
 		ui_font_size  = s_setup_osd.ui_display_font_size;	
 		ui_font_size = s_setup_osd.ui_display_font_size;
 		ui_base_title_w = s_setup_osd.ui_display_base_w;
-		ui_base_w = s_setup_osd.ui_display_base_w/2;
+		ui_base_w = s_setup_osd.ui_display_base_w/2+40;
 		ui_base_h = s_setup_osd.ui_display_base_h;
 		ui_gap = ui_base_h/12;
 	}
 
 	//title
-	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_DARKGRAY, ui_font_size, _STR_FACTORY_MENU_, (ui_base_title_w/2)*ui_times/divisor, (ui_gap/2+2)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER); //14->(ui_gap/2+2)
+	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_GRAY, ui_font_size, _STR_FACTORY_MENU_, (ui_base_title_w/2)*ui_times/divisor, 14*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
 
 	// item
 #ifdef ENABLE_RESTORE_OLD_DATA
-	if(ui_factory_menu_item == HOST_OSD_FACTORY_MENU_MAIN){
-		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, 0, ui_gap*3*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, (ui_base_h-ui_gap*3)*ui_times/divisor);
-		for(i=0; i<SETUP_FACTORY_MENU_TOTAL; i++){
-			if(s_setup_osd.ui_factory_main_disabled[i] == 1){
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}else{
-				if(i==(wIndex%SETUP_FACTORY_MENU_TOTAL)){
-					ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, 0, (ui_gap*3+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-					if(i == SETUP_FACTORY_MENU_RESTORE_OLD_DATA){
-						ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, "Restore Old Data", 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-					}else if(i == SETUP_FACTORY_MENU_BACKUP){
-						ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, "Back Up", 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-					}else{
-						host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-					}
+	for(i=0; i<SETUP_FACTORY_MENU_TOTAL; i++){
+		if(s_setup_osd.ui_factory_main_disabled[i] == 1){
+			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_MENU_BG, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		}else{
+			if(i==(wIndex%SETUP_FACTORY_MENU_TOTAL)){
+				ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, 0, (ui_gap*3+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+				if(i == SETUP_FACTORY_MENU_RESTORE_OLD_DATA){
+					ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size, "Restore Old Data", 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+				}else if(i == SETUP_FACTORY_MENU_BACKUP){
+					ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size, "Back Up", 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 				}else{
-					if(i == SETUP_FACTORY_MENU_RESTORE_OLD_DATA){
-						ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, "Restore Old Data", 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-					}else if(i == SETUP_FACTORY_MENU_BACKUP){
-						ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, "Back Up", 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-					}else{
-						host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-					}
+					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 				}
-			}
-		}
-	}else{
-		for(i=0; i<SETUP_FACTORY_MENU_TOTAL; i++){
-			if(s_setup_osd.ui_factory_main_disabled[i] == 1){
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 			}else{
-				if(i==(wIndex%SETUP_FACTORY_MENU_TOTAL)){
-					ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, 0, (ui_gap*3+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-					if(i == SETUP_FACTORY_MENU_RESTORE_OLD_DATA){
-						ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, "Restore Old Data", 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-					}else if(i == SETUP_FACTORY_MENU_BACKUP){
-						ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, "Back Up", 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-					}else{
-						host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-					}
+				if(i == SETUP_FACTORY_MENU_RESTORE_OLD_DATA){
+					ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size, "Restore Old Data", 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+				}else if(i == SETUP_FACTORY_MENU_BACKUP){
+					ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size, "Back Up", 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 				}else{
-					if(i == SETUP_FACTORY_MENU_RESTORE_OLD_DATA){
-						ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, "Restore Old Data", 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-					}else if(i == SETUP_FACTORY_MENU_BACKUP){
-						ab_osd_draw_text(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, "Back Up", 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-					}else{
-						host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-					}
+					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 				}
 			}
 		}
 	}
 #else
-	if(ui_factory_menu_item == HOST_OSD_FACTORY_MENU_MAIN){
-		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, 0, ui_gap*3*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, (ui_base_h-ui_gap*3)*ui_times/divisor);
-		for(i=0; i<SETUP_FACTORY_MENU_TOTAL; i++){
-			if(s_setup_osd.ui_factory_main_disabled[i] == 1){
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+	for(i=0; i<SETUP_FACTORY_MENU_TOTAL; i++){
+		if(s_setup_osd.ui_factory_main_disabled[i] == 1){
+			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_MENU_BG, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		}else{
+			if(i==(wIndex%SETUP_FACTORY_MENU_TOTAL)){
+				ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, 0, (ui_gap*3+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 			}else{
-				if(i==(wIndex%SETUP_FACTORY_MENU_TOTAL)){
-					ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, 0, (ui_gap*3+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}else{
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}
-			}
-		}
-	}else{
-		for(i=0; i<SETUP_FACTORY_MENU_TOTAL; i++){
-			if(s_setup_osd.ui_factory_main_disabled[i] == 1){
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}else{
-				if(i==(wIndex%SETUP_FACTORY_MENU_TOTAL)){
-					ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, 0, (ui_gap*3+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}else{
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}
+				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 			}
 		}
 	}
@@ -2605,11 +2530,11 @@ void OSDLib_DrawFactoryAdImageMenu(AB_OSD_BUF_ST s_dst_buf, uint16_t wIndex, HOS
 			ui_times = 60;
 			break;
 			
-		default:
 		case HOST_OSD_MENU_RESOLUTION_4K:
 			ui_times = 30;
 			break;
 			
+		default:
 		case HOST_OSD_MENU_RESOLUTION_FULLHD:
 			ui_times = 15;
 			break;
@@ -2618,7 +2543,7 @@ void OSDLib_DrawFactoryAdImageMenu(AB_OSD_BUF_ST s_dst_buf, uint16_t wIndex, HOS
 			ui_times = 10;
 			break;		
 	}
-	
+
 	if(s_setup_osd.ui_osd_type == HOST_OSD_TYPE_ENC){
 		ui_font_size  = s_setup_osd.ui_enc_font_size;
 		ui_font_size = s_setup_osd.ui_enc_font_size;
@@ -2636,34 +2561,18 @@ void OSDLib_DrawFactoryAdImageMenu(AB_OSD_BUF_ST s_dst_buf, uint16_t wIndex, HOS
 	}
 
 	//title
-	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_DARKGRAY, ui_font_size, _STR_ADVANCE_IMAGE_, (ui_base_title_w/2)*ui_times/divisor, (ui_gap/2+2)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER); //14->(ui_gap/2+2)
+	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_GRAY, ui_font_size, _STR_ADVANCE_IMAGE_, (ui_base_title_w/2)*ui_times/divisor, 14*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
 
 	// item
-	if(ui_factory_menu_item == HOST_OSD_FACTORY_MENU_ADIMAGE){
-		ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, 0, ui_gap*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
-		for(i=0; i<HOSTMI_ADIMAGE_TOTAL; i++){
-			if(s_setup_osd.ui_adimage_disabled[i] == 1){
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+	for(i=0; i<HOSTMI_ADIMAGE_TOTAL; i++){
+		if(s_setup_osd.ui_adimage_disabled[i] == 1){
+			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_MENU_BG, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+		}else{
+			if(i==(wIndex%HOSTMI_ADIMAGE_TOTAL)){
+				ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, 0, (ui_gap+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 			}else{
-				if(i==(wIndex%HOSTMI_ADIMAGE_TOTAL)){
-					ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, 0, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}else{
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}
-			}
-		}
-	}else{
-		for(i=0; i<HOSTMI_ADIMAGE_TOTAL; i++){
-			if(s_setup_osd.ui_adimage_disabled[i] == 1){
-				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_DISABLE, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-			}else{
-				if(i==(wIndex%HOSTMI_ADIMAGE_TOTAL)){
-					ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, 0, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}else{
-					host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_MEDIUMGRAY, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
-				}
+				host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size, ui_str_id[i], 10*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 			}
 		}
 	}
@@ -2675,7 +2584,6 @@ void OSDLib_Draw2ndFactoryMenu(AB_OSD_BUF_ST s_dst_buf, uint32_t ui_str_id[], ui
 	AB_OSD_RECT_ST s_dst_rect = {0};
 	uint32_t ui_base_x = 0;
 	uint32_t ui_base_w = 0;
-	uint32_t ui_base_h = 0;
 	uint32_t ui_gap = 0;
 	uint32_t ui_times = 30;
 	uint32_t divisor = 10;
@@ -2702,33 +2610,25 @@ void OSDLib_Draw2ndFactoryMenu(AB_OSD_BUF_ST s_dst_buf, uint32_t ui_str_id[], ui
 	
 	if(s_setup_osd.ui_osd_type == HOST_OSD_TYPE_ENC){
 		ui_font_size = s_setup_osd.ui_enc_font_size;
-		ui_base_x = s_setup_osd.ui_enc_base_w/2;
-		ui_base_w = s_setup_osd.ui_enc_base_w/2;
-		ui_base_h = s_setup_osd.ui_enc_base_h;
-		ui_gap = ui_base_h/12; 
+		ui_base_x = s_setup_osd.ui_enc_base_w/2+40;
+		ui_base_w = s_setup_osd.ui_enc_base_w/2-42;;
+		ui_gap = s_setup_osd.ui_enc_base_h/12;
 	}else{
 		ui_font_size = s_setup_osd.ui_display_font_size;
-		ui_base_x = s_setup_osd.ui_display_base_w/2;
-		ui_base_w = s_setup_osd.ui_display_base_w/2;
-		ui_base_h = s_setup_osd.ui_display_base_h;
-		ui_gap = ui_base_h/12;
+		ui_base_x = s_setup_osd.ui_display_base_w/2+40;
+		ui_base_w = s_setup_osd.ui_display_base_w/2-42;
+		ui_gap = s_setup_osd.ui_display_base_h/12;
 	}
 
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, (ui_base_x+1)*ui_times/divisor, ui_gap*3*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, (ui_base_h-ui_gap*3)*ui_times/divisor);
-	if(nResolution == HOST_OSD_MENU_RESOLUTION_FULLHD) ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, 
-	                                                   (ui_base_x+1)*ui_times/divisor+(ui_base_w-1)*ui_times/divisor, ui_gap*3*ui_times/divisor, 
-	                                                   s_setup_osd.ui_enc_w-((ui_base_x+1)*ui_times/divisor+(ui_base_w-1)*ui_times/divisor), (ui_base_h-ui_gap*3)*ui_times/divisor);
 	for(i=0; i<wTotalIndex; i++){
 		if(i==(wIndex%wTotalIndex)){
-			ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+1)*ui_times/divisor, (ui_gap*3+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-			if(nResolution == HOST_OSD_MENU_RESOLUTION_FULLHD) ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, 
-	                                                           (ui_base_x+1)*ui_times/divisor+(ui_base_w-1)*ui_times/divisor, (ui_gap*3+i*ui_gap)*ui_times/divisor, 
-	                                                           s_setup_osd.ui_enc_w-((ui_base_x+1)*ui_times/divisor+(ui_base_w-1)*ui_times/divisor), ui_gap*ui_times/divisor);
-			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+			ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_base_x*ui_times/divisor, (ui_gap*3+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		}else{
-			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size-2*ui_times/divisor, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*7/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		}
 	}
+
 }
 
 void OSDLib_Draw2page2ndFactoryMenu(AB_OSD_BUF_ST s_dst_buf, uint32_t ui_str_id[], uint16_t wIndex, uint16_t wTotalIndex, HOST_OSD_MENU_RESOLUTION nResolution)
@@ -2737,7 +2637,6 @@ void OSDLib_Draw2page2ndFactoryMenu(AB_OSD_BUF_ST s_dst_buf, uint32_t ui_str_id[
 	AB_OSD_RECT_ST s_dst_rect = {0};
 	uint32_t ui_base_x = 0;
 	uint32_t ui_base_w = 0;
-	uint32_t ui_base_h = 0;
 	uint32_t ui_gap = 0;
 	uint32_t ui_times = 30;
 	uint32_t divisor = 10;
@@ -2765,32 +2664,24 @@ void OSDLib_Draw2page2ndFactoryMenu(AB_OSD_BUF_ST s_dst_buf, uint32_t ui_str_id[
 	if(s_setup_osd.ui_osd_type == HOST_OSD_TYPE_ENC){
 		ui_font_size = s_setup_osd.ui_enc_font_size;
 		ui_base_x = s_setup_osd.ui_enc_base_w/2;
-		ui_base_w = s_setup_osd.ui_enc_base_w/2;
-		ui_base_h = s_setup_osd.ui_enc_base_h;
-		ui_gap = ui_base_h/12;
+		ui_base_w = s_setup_osd.ui_enc_base_w/2-2;
+		ui_gap = s_setup_osd.ui_enc_base_h/12;
 	}else{
 		ui_font_size = s_setup_osd.ui_display_font_size;
 		ui_base_x = s_setup_osd.ui_display_base_w/2;
-		ui_base_w = s_setup_osd.ui_display_base_w/2;
-		ui_base_h = s_setup_osd.ui_display_base_h;
-		ui_gap = ui_base_h/12;
+		ui_base_w = s_setup_osd.ui_display_base_w/2-2;
+		ui_gap = s_setup_osd.ui_display_base_h/12;
 	}
 
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, (ui_base_x+1)*ui_times/divisor, ui_gap*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, (ui_base_h-ui_gap)*ui_times/divisor);
-	if(nResolution == HOST_OSD_MENU_RESOLUTION_FULLHD) ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_LIGHTGRAY, 
-	                                                   (ui_base_x+1)*ui_times/divisor+(ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor, 
-	                                                   s_setup_osd.ui_enc_w-((ui_base_x+1)*ui_times/divisor+(ui_base_w-1)*ui_times/divisor), (ui_base_h-ui_gap)*ui_times/divisor);
 	for(i=0; i<wTotalIndex; i++){
 		if(i==(wIndex%wTotalIndex)){
-			ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, (ui_base_x+1)*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, (ui_base_w-1)*ui_times/divisor, ui_gap*ui_times/divisor);
-			if(nResolution == HOST_OSD_MENU_RESOLUTION_FULLHD) ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_PICKGRAY, 
-	                                                           (ui_base_x+1)*ui_times/divisor+(ui_base_w-1)*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, 
-	                                                           s_setup_osd.ui_enc_w-((ui_base_x+1)*ui_times/divisor+(ui_base_w-1)*ui_times/divisor), ui_gap*ui_times/divisor);
-			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_PICKGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+			ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, ui_base_x*ui_times/divisor, (ui_gap+i*ui_gap)*ui_times/divisor, ui_base_w*ui_times/divisor, ui_gap*ui_times/divisor);
+			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_BLACK, COLOR_ARGB8888_WHITE, ui_font_size-2*ui_times/divisor, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		}else{
-			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_NAVY, COLOR_ARGB8888_LIGHTGRAY, ui_font_size, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
+			host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_MENU_BG, ui_font_size-2*ui_times/divisor, ui_str_id[i], (ui_base_x+10)*ui_times/divisor, (ui_gap*3/2+i*ui_gap)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_LEFT);
 		}
 	}
+
 }
 
 void OSDLib_DrawRestoreMenu(AB_OSD_BUF_ST s_dst_buf, HOST_OSD_MENU_RESOLUTION nResolution)
@@ -2836,10 +2727,12 @@ void OSDLib_DrawRestoreMenu(AB_OSD_BUF_ST s_dst_buf, HOST_OSD_MENU_RESOLUTION nR
 	}
 
 	// restore item
-	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_DARKGRAY, ui_base_w/8*ui_times/divisor, ui_base_h/6*ui_times/divisor, ui_base_w*6/8*ui_times/divisor, ui_base_h*4/6*ui_times/divisor);
-	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_DARKGRAY, ui_font_size, ui_str_id[0], (ui_base_w/2)*ui_times/divisor, ui_base_h/3*ui_times/divisor, AB_OSD_ALIGN_V_DOWN|AB_OSD_ALIGN_H_CENTER);
-	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_DARKGRAY, ui_font_size, ui_str_id[1], (ui_base_w/2)*ui_times/divisor, (ui_base_h/2+ui_gap*0)*ui_times/divisor, AB_OSD_ALIGN_V_TOP|AB_OSD_ALIGN_H_CENTER);
-	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_DARKGRAY, ui_font_size, ui_str_id[2], (ui_base_w/2)*ui_times/divisor, (ui_base_h/2+ui_gap*1)*ui_times/divisor, AB_OSD_ALIGN_V_TOP|AB_OSD_ALIGN_H_CENTER);
+	ab_osd_draw_rectangle(&s_dst_buf, COLOR_ARGB8888_BLACK, ui_base_w/8*ui_times/divisor, ui_base_h/8*ui_times/divisor, ui_base_w*6/8*ui_times/divisor, ui_base_h*6/8*ui_times/divisor);
+	ab_osd_draw_hollow_rectangle(&s_dst_buf, COLOR_ARGB8888_WHITE, 2*ui_times/divisor, ui_base_w/8*ui_times/divisor, ui_base_h/8*ui_times/divisor, ui_base_w*6/8*ui_times/divisor, ui_base_h*6/8*ui_times/divisor);
+	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_BLACK, ui_font_size, ui_str_id[0], (ui_base_w/2)*ui_times/divisor, (ui_base_h/8+30)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
+	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_BLACK, ui_font_size, ui_str_id[1], (ui_base_w/2)*ui_times/divisor, (ui_base_h/8+90+ui_gap*0)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
+	host_osd_draw_text_utf8(&s_dst_buf, &s_dst_rect, COLOR_ARGB8888_WHITE, COLOR_ARGB8888_BLACK, ui_font_size, ui_str_id[2], (ui_base_w/2)*ui_times/divisor, (ui_base_h/8+90+ui_gap*1)*ui_times/divisor, AB_OSD_ALIGN_V_CENTER|AB_OSD_ALIGN_H_CENTER);
+
 }
 
 #if 1
